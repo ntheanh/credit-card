@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "craco start && postcss src/css/app.css -o public/app.css",
+    "build": "craco build"
   },
   "dependencies": {
     "react": "^18.2.0",
