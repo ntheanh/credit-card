@@ -6,11 +6,14 @@ const Navbar = () => {
   const [toggle, settoggle] = useState(false);
   return (
     <nav className="flex w-full py-6 justify-between items-center navbar">
-      <img
+      {/* <img
         src={logo}
         alt="bank"
         className="w-[124px] h-[32px] cursor-pointer"
-      />
+      /> */}
+      <div className="font-bold text-3xl bg-clip-text text-gradient">
+        Ty Credit
+      </div>
 
       <ul className="sm:flex hidden items-center list-none justify-end flex-1">
         {navLinks.map((nav, index) => (
